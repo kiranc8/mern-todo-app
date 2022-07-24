@@ -34,13 +34,33 @@ const ChangePassword = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    let formObj = {
-      userId: userId,
-      password: password,
-      newPassword: newPassword,
-    };
-    formSubmit(formObj);
+    if (passErr) {
+      setMessage(
+        "Password should contain atleast one special char,number,capital and small letter"
+      );
+      setOpen(true);
+    }
+    else if (password==="") {
+      setMessage(
+        "current password can't be empty"
+      );
+      setOpen(true);
+    }
+    else if (newPassword==="") {
+      setMessage(
+        "New password can't be empty"
+      );
+      setOpen(true);
+    }
+    else {
+      e.preventDefault();
+      let formObj = {
+        userId: userId,
+        password: password,
+        newPassword: newPassword,
+      };
+      formSubmit(formObj);
+    }
   };
 
   const formSubmit = (formObj) => {
