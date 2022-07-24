@@ -1,0 +1,1 @@
+export const baseUrl = 'https://todo-appmern.herokuapp.com/';
