@@ -15,3 +15,29 @@ https://todo-appmern.herokuapp.com/
 ## TECH
 
 Technologies used: MongoDB, HTML, CSS, Reactjs, JavaScript, Nodejs, MUI
+
+## GETTING STARTED
+
+The application stores all the data in MongoDB database, so creating MongoDB cluster is required for running the project locally.
+
+1. Go to the root folder ```cd mern-todo-app```
+2. ```npm install```
+3. Create your environment variables in .env file in root folder
+
+```
+PORT=8080
+MONGO_URI=<YOUR_MONGODB_URI_TO_CONNECT_YOUR_APPLICATION>
+NODE_ENV=production
+```
+4. Go to the client folder ```cd client``` run the following command
+
+```
+npm install
+npm run build
+```
+
+5. Run the application from root folder (mern-todo-app)
+
+``` npm start ```
+
+Your application will be running in ```localhost:8080```
