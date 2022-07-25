@@ -22,7 +22,7 @@ The application stores all the data in MongoDB database, so creating MongoDB clu
 
 1. Go to the root folder ```cd mern-todo-app```
 2. ```npm install```
-3. Create your environment variables in .env file in root folder
+3. Create your environment variables in .env file
 
 ```
 PORT=8080
