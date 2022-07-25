@@ -12,6 +12,6 @@ https://todo-appmern.herokuapp.com/
 2. Add Task . Added task can be edited and deleted
 3. View task list . Filter and sort them too.
 
-##TECH
+## TECH
 
 Technologies used: MongoDB, HTML, CSS, Reactjs, JavaScript, Nodejs, MUI
