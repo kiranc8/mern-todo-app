@@ -34,13 +34,7 @@ const ChangePassword = () => {
   };
 
   const handleSubmit = (e) => {
-    if (passErr) {
-      setMessage(
-        "Password should contain atleast one special char,number,capital and small letter"
-      );
-      setOpen(true);
-    }
-    else if (password==="") {
+    if (password==="") {
       setMessage(
         "current password can't be empty"
       );
@@ -49,6 +43,12 @@ const ChangePassword = () => {
     else if (newPassword==="") {
       setMessage(
         "New password can't be empty"
+      );
+      setOpen(true);
+    }
+    else if (passErr) {
+      setMessage(
+        "Password should contain atleast one special char,number,capital and small letter"
       );
       setOpen(true);
     }

@@ -125,6 +125,7 @@ const Register = () => {
           setMessage("");
           setSuccessMsg(response.data);
           setOpen(true);
+          navigate("/login");
         } else {
           setSuccessMsg("");
           setMessage(response.data);
