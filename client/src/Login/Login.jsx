@@ -48,10 +48,11 @@ const Login = () => {
         setEmailError("");
       }
     } else {
-      let passwordRegx = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{7,20}$/;
+      let passwordRegx =
+        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
       if (!value.match(passwordRegx) || value === "") {
         setPasswordError(
-          "Password should contain atleast one special char,number,capital and small letter"
+          "Password must have atleast 8 char one uppercase one lowercase one special case and one num"
         );
       } else {
         setPasswordError("");
@@ -64,8 +65,7 @@ const Login = () => {
     if (email === "") {
       setMessage("Please enter email");
       setOpen(true);
-    }
-    else if(password === ""){
+    } else if (password === "") {
       setMessage("Please enter password");
       setOpen(true);
     } else if (emailError || passwordError) {
@@ -93,7 +93,7 @@ const Login = () => {
           localStorage.setItem("loggedIn", "true");
           localStorage.setItem("name", response.data.firstname);
           localStorage.setItem("userId", response.data.userId);
-          localStorage.setItem("email",response.data.email);
+          localStorage.setItem("email", response.data.email);
           hideLoader();
           navigate("/");
         }

@@ -82,10 +82,10 @@ const Register = () => {
         setEmailErr("");
       }
     } else {
-      let passwordRegx = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{7,20}$/;
+      let passwordRegx = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
       if (!value.match(passwordRegx)) {
         setPassErr(
-          "Password should contain atleast one special char,number,capital and small letter"
+          "Password must have atleast 8 char one uppercase one lowercase one special case and one num"
         );
       } else {
         setPassErr("");
