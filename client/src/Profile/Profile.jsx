@@ -14,10 +14,10 @@ const Profile = () => {
       <Container
         maxWidth="sm"
         sx={{
+          height: '80vh',
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          marginTop: "150px",
         }}
       >
         <Box

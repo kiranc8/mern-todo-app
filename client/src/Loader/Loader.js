@@ -5,7 +5,7 @@ const Loader = () => {
     <div
       style={{
         backgroundColor: "#fff",
-        height: "100vh",
+        height: "80vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

@@ -12,10 +12,6 @@ app.use(cors());
 
 
 
-// app.get("/", (req, res) => {
-//   res.send("App is running");
-// });
-
 app.use("/user", userRouter);
 app.use("/todo", todoRouter);
 
