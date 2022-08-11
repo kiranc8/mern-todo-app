@@ -123,7 +123,7 @@ const Login = () => {
         <Container
           maxWidth="xs"
           sx={{
-            height: "75vh",
+            minHeight: "73vh",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",

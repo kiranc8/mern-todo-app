@@ -141,7 +141,7 @@ const Register = () => {
       <Container
         maxWidth="xs"
         sx={{
-          height: "80vh",
+          minHeight: "73vh",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",

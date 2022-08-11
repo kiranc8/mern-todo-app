@@ -36,7 +36,7 @@ const Home = () => {
       <Container
         sx={{
           maxWidth: { md: "50%", xs: "100%" },
-          height: "85vh",
+          minHeight: "83vh",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
